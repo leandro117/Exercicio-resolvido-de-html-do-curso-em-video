@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="../css/fotos.css">
+    <title>exercicio2</title>
+
+    <script lang="javascript" src="../javascript/funcoes.js"></script>
+    
+ </head>
+ <body>
+ <div id = "interface">
+
+ <header id="cabecalho">
+  <hgroup>
+   <h1>Google Glass</h1>
+   <h2>A revolução do Google está chegando</h2>
+  </hgroup>
+
+  <img id="glass" src="../img/fotos.png" alt="imagem de um oculos">
+
+  <nav id="menu">
+   <h1>Menu principal</h1>
+   <ul onmouseout="mudaImagem('../img/fotos.png')">
+    <li onmouseover="mudaImagem('../img/home.png')">
+     <a href="../textos/index.html">Home</a>
+    </li> 
+    <li onmouseover="mudaImagem('../img/especificacoes.png')"> 
+      <a href="../textos/specs.html" >Especificações</a>
+    </li> 
+    <li onmouseover="mudaImagem('../img/fotos.png')"> 
+      <a href="../textos/fotos.html" >Fotos</a>
+    </li> 
+    <li onmouseover="mudaImagem('../img/multimidia.png')"> 
+      <a href="../textos/multimidia.html">Multimídia</a> 
+    </li> 
+    <li onmouseover="mudaImagem('../img/contato.png')"> 
+      <a href="../textos/fale-conosco.html">Fale conosco</a> 
+    </li> 
+   </ul>
+  </nav>
+ </header>
+
+ <section id="texto-secundario">
+  <article id="fotos">
+  <header id="texto-principal">
+  <hgroup>
+   <h3>Glass > Fotos</h3>
+   <h1>Galeria de Imagens do Google Glass</h1>
+   <h2>por Gustavo Guanabara</h2>
+   <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+  </hgroup>
+  </header>
+
+ <p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.</p>
+ <ul id="galeria-fotos"> 
+  <li id="foto-01"><span>Agenda e lembretes</span></li>
+  <li id="foto-02"><span>Sergey Brin usando o Glass</span></li>
+  <li id="foto-03"><span>Leve e compacto</span></li>
+  <li id="foto-04"><span>Sensação de uma tela de 50"</span></li>
+  <li id="foto-05"><span>Vários tipos de lente</span></li>
+  <li id="foto-06"><span>Informações importantes</span></li>
+ </ul>
+ </article>
+ </section>
+
+ <footer>
+  <p>&copy; copyright 2013 - by Gustavo Guanabara<br/>
+  <a href="https://pt-br.facebook.com/login/device-based/regular/login/" target="_blank">Facebook</a> | 
+  <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D" target="_blank">Twitter</a><p>
+ </footer>
+      
+ </div>
+ </body>
+</html>

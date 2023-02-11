@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+
+    <title>exercicio2</title>
+
+    <script lang="javascript" src="../javascript/funcoes.js"></script>
+    <script>
+      function mudarvalor() {
+        var qnt = parseInt(document.getElementById('iqtd').value);
+        var tot = qnt * 1500;
+        document.getElementById('ipreco').value = tot;
+      }
+    </script>
+    
+ </head>
+ <body>
+ <div id = "interface">
+
+ <header id="cabecalho">
+  <hgroup>
+   <h1>Google Glass</h1>
+   <h2>A revolução do Google está chegando</h2>
+  </hgroup>
+
+  <img id="glass" src="../img/contato.png" alt="imagem de um oculos">
+
+  <nav id="menu">
+   <h1>Menu principal</h1>
+   <ul onmouseout="mudaImagem('../img/contato.png')">
+    <li onmouseover="mudaImagem('../img/home.png')">
+     <a href="../textos/index.html">Home</a>
+    </li> 
+    <li onmouseover="mudaImagem('../img/especificacoes.png')"> 
+      <a href="../textos/specs.html" >Especificações</a>
+    </li> 
+    <li onmouseover="mudaImagem('../img/fotos.png')"> 
+      <a href="../textos/fotos.html" >Fotos</a>
+    </li> 
+    <li onmouseover="mudaImagem('../img/multimidia.png')"> 
+      <a href="../textos/multimidia.html">Multimídia</a> 
+    </li> 
+    <li onmouseover="mudaImagem('../img/contato.png')"> 
+      <a href="../textos/fale-conosco.html">Fale conosco</a> 
+    </li> 
+   </ul>
+  </nav>
+ </header>
+
+  <section id="texto-secundario">
+  <header id="texto-principal">
+  <hgroup>
+   <h3>Fale Conosco > Contato</h3>
+   <h1>Formulário de Contato</h1>
+   <h2>por Gustavo Guanabara</h2>
+   <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+  </hgroup>
+  </header>
+
+
+ <form method="POST" oninput="mudarvalor();"> 
+  <fieldset id="identificacao"> <legend>Identificação do Usuário</legend>
+   <p><label for="inome">Nome</label> <input type="text" size="20" maxlength="30" name="nnome" id="inome" placeholder="Nome completo"></p>
+   <p><label for="isenha">Senha</label> <input type="password" size="8" maxlength="8" name="nsenha" id="isenha" placeholder="8 digitos"></p>
+   <p><label for="ie-mail">E-mail</label> <input type="text" size="20" maxlength="40" name="ne-mail" id="ie-mail" placeholder="Separe por vírgulas"></p>
+    <fieldset id="sexo"><legend>Sexo</legend>
+     <p><label for="imasc">Masculino</label><input type="radio" name="nsexo" id="imasc"></p>
+     <p><label for="ifem">Feminino</label><input type="radio" name="nsexo" id="ifem"></p></legend>
+    </fieldset>
+   <p><label for="idata">Data de Nascimento</label> <input type="date" name="ndata" id="idata" placeholder="nome completo"></p>
+  </fieldset>
+
+  <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+     <p><label for="irua">Logradouro</label> </label><input type="text" name="rua" id="irua" size="13" maxlength="80" placeholder="rua, avn, trav..."> </p>
+     <p><label for="inumero">Número</label> </label><input type="number" min="0" id="inumero" max="9999" maxlength="9999" size="10"></p>
+     <p><label for="iestado">Estado</label>
+       <select name="nestado" id="iestado">
+        <optgroup label="Região Sudeste">
+         <option value="RJ">Rio De Janeiro</option>
+         <option value="SP">São Paulo</option>
+         <option value="MG">Minas Gerais</option>
+        </optgroup>
+
+        <optgroup label="Região Sul">
+         <option value="PR">Paraná</option>
+         <option value="SC">Santa Catarina</option>
+         <option value="RS">Rio Grande Do Sul</option>
+        </optgroup>
+       </select>
+     </p>
+     <p>Cidade <input type="text" id="icidade" name="ncidade" list="dlista" placeholder="digite a cidade">
+     <datalist id="dlista">
+       <option value="Rio De Janeiro"></option>
+       <option value="Nova Iguaçu"></option>
+       <option value="Niterói"></option>
+       <option value="Belford Roxo"></option>
+     </datalist>
+     </p>
+  </fieldset>
+
+  <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+    <p><label for="iurgencia">Grau de Urgência: </label>  Min<input id="iurgencia" type="range" step="2" min="0" max="10">Max</p>
+    <p>Mensagem: <br><textarea name="nmensagem" id="imensagem" cols="35" rows="5" 
+    placeholder="digite um texto"></textarea></p>
+  </fieldset>
+
+  <fieldset id="pagamento">
+    <legend>Quero um Google Glass</legend>
+     <p><input type="checkbox" id="icheck" name="ncheck"><label for="icheck">Gostaria de adquirir um Google Glass quando disponível</label></p>
+     <p>Cor: <input type="color" name="ncolor" id="icolor"></p>
+     <p>Quantidade: <input type="number" name="nqtd" id="iqtd" min="1" max="5" size="5"></p>
+     <p>Preço Total: R$ <input type="text" name="npreco" id="ipreco" readonly size="10"></p>
+  </fieldset>
+
+  <input type="image" src="../img/botao-enviar.png" id="ibotao" name="nbotao">
+ </form>
+
+ </section>
+
+ <footer>
+  <p>&copy; copyright 2013 - by Gustavo Guanabara<br/>
+  <a href="https://pt-br.facebook.com/login/device-based/regular/login/" target="_blank">Facebook</a> | 
+  <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D" target="_blank">Twitter</a><p>
+ </footer>
+      
+ </div>
+ </body>
+</html>

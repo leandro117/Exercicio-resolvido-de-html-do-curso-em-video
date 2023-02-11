@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="../css/specs.css">
+    <title>exercicio2</title>
+
+    <script lang="javascript" src="../javascript/funcoes.js"></script>
+    
+ </head>
+ <body>
+ <div id = "interface">
+
+ <header id="cabecalho">
+  <hgroup>
+   <h1>Google Glass</h1>
+   <h2>A revolução do Google está chegando</h2>
+  </hgroup>
+
+  <img id="glass" src="../img/especificacoes.png" alt="imagem de um oculos">
+
+  <nav id="menu">
+   <h1>Menu principal</h1>
+   <ul onmouseout="mudaImagem('../img/especificacoes.png')">
+    <li onmouseover="mudaImagem('../img/home.png')">
+     <a href="../textos/index.html">Home</a>
+    </li> 
+    <li onmouseover="mudaImagem('../img/especificacoes.png')"> 
+      <a href="../textos/specs.html" >Especificações</a>
+    </li> 
+    <li onmouseover="mudaImagem('../img/fotos.png')"> 
+      <a href="../textos/fotos.html" >Fotos</a>
+    </li> 
+    <li onmouseover="mudaImagem('../img/multimidia.png')"> 
+      <a href="../textos/multimidia.html">Multimídia</a> 
+    </li> 
+    <li onmouseover="mudaImagem('../img/contato.png')"> 
+      <a href="../textos/fale-conosco.html">Fale conosco</a> 
+    </li> 
+   </ul>
+  </nav>
+ </header>
+
+ <section id="conteudo">
+  <article id="espec">
+  <header id="texto-principal">
+  <hgroup>
+   <h3>Glass > Especificações</h3>
+   <h1>Raio-X no Google Glass</h1>
+   <h3>por Gustavo Guanabara</h3>
+   <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+  </hgroup>
+ </header>
+  <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+  <img src="../img/glass-esquema-marcado.jpg" alt="Google-glass-esquema-marcado" usemap="#meu-mapa">
+  <map name="meu-mapa">
+    <area shape="poly" coords="183,220, 264,209, 266,242, 185,253" href="../textos/google-glass.html#tela" target="iframe-spac">
+    <area shape="circle" coords="158,244, 12" href="../textos/google-glass.html#camera" target="iframe-spac"/>
+    <area shape="poly" coords="28,148, 82,213, 81,249, 25,165" href="../textos/google-glass.html#sensores" target="iframe-spac"/> 
+    <area shape="circle" coords="76,50 12" href="../textos/google-glass.html#bateria" target="iframe-spac"/> 
+  </map>
+  <iframe src="../textos/google-glass.html" id="iframe-spac" name="iframe-spac"></iframe>
+ </article>
+ </section>
+ 
+ <footer>
+  <p>&copy; copyright 2013 - by Gustavo Guanabara<br/>
+  <a href="https://pt-br.facebook.com/login/device-based/regular/login/" target="_blank">Facebook</a> | 
+  <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D" target="_blank">Twitter</a><p>
+ </footer>
+      
+ </div>
+ </body>
+</html>

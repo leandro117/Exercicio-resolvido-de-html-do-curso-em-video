@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+iframe#iframe-spac{
+    width: 400px;
+    height: 280px;
+    margin: auto;
+    border: none;
+}
+

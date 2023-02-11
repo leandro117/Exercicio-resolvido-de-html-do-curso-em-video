@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face{
+    font-family: 'FontLogo';
+    src: url('../_fonts/bubblegum-sans-regular.otf');
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+body {
+    background-color: rgb(196, 196, 196);
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: gray;
+    text-decoration-line: none;
+}
+
+a:hover{
+    text-decoration: underline gray;
+}
+
+div#interface {
+    background-color: white;
+    width: 1200px;
+    margin: -10px auto 0px auto;
+    padding: 10px 10px 2px 10px;
+    box-shadow: 0px 4px 4px 3px rgb(31, 31, 31);
+}
+
+header#cabecalho {
+    border-bottom: solid gray;
+    background: url('../img/glass-logo-peq.jpg') no-repeat 0px 80px;
+    height: 150px;
+}
+
+ /* Título */
+header#cabecalho h1{
+    color:  rgb(97, 97, 97);
+    font-family: 'FontLogo', Helvetica, sans-serif;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    color: rgb(177, 173, 173);
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0px;
+    margin-top: -5px;
+}
+
+/* img glass */
+img#glass {
+    position: absolute;
+    left: 1110px;
+    top: 95px;
+    z-index: 2;
+}
+
+ /* Menu inferior */
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: black;
+}
+
+nav#menu a:hover{
+    color: white;
+    text-decoration: underline white;
+
+}
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul{
+    position: absolute;
+    top: -20px;
+    left: 600px;
+}
+
+nav#menu li{
+    background-color: rgb(218, 218, 218);
+    display: inline-block;
+    padding: 10px;
+    margin: 0px;
+    text-transform: uppercase;
+    color: black;
+}
+
+nav#menu li:hover{
+    background-color: gray;
+    transition: background-color 2s;
+
+}
+
+/* img homem-mulher */
+figure.foto-legenda {
+    position: relative;
+    margin: auto auto;
+    border: 8px solid rgb(241, 241, 241);
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption{
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+figure.foto-legenda figcaption:hover{
+    opacity: 1;
+}
+
+/* sub-titulos do artigo*/
+article#texto-principal h2{
+    background-color: rgb(218, 218, 218);
+    color: rgb(61, 61, 61);
+    padding: 5px;
+}
+
+/* parte principal do site */
+section#texto-principal{
+    display: block;
+    float: left;
+    width: 55%;
+    padding: 10px;
+    border-right: solid;
+    border-color: gray;
+}
+
+header#texto-principal h1{
+    font-family: 'FontLogo';
+    color:  rgb(97, 97, 97);
+    font-size: 25pt;
+    margin-bottom: 0px;
+}
+
+header#texto-principal h2{
+    color:  rgb(196, 193, 193);
+    font-size: 15pt;
+    margin-top: 0px;
+    background: none;
+}
+
+header#texto-principal h3{
+    color:  rgb(196, 193, 193);
+    font-size: 15pt;
+    margin-top: 5px;
+}
+
+header#texto-principal h3.direita{
+    text-align: right;
+    font-size: 10pt;
+    color:  rgb(97, 97, 97);
+}
+
+aside#lateral{
+    display: block;
+    float: right;
+    width: 38%;
+    background-color: rgb(206, 205, 205);
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .60);
+}
+
+aside#lateral h1 {
+    color: rgb(61, 61, 61);
+    font-family: 'FontLogo', sans-serif;
+    font-size: 25pt;
+}
+
+aside#lateral h2 {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 10px;
+}
+
+footer {
+    clear: both;
+    border-top: solid;
+    border-color: gray;
+}
+
+footer p {
+    text-align: center;
+}
+
+table#tabelaesp {
+    border: 1px solid rgb(82, 82, 82);
+    border-spacing: 0px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabelaesp td {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+table#tabelaesp td.ce{
+    background: gray;
+    color: white;
+    font-weight: bold;
+    vertical-align: top;
+    text-align: end;
+}
+
+table#tabelaesp td.cd{
+    background: rgb(199, 199, 199);
+    font-weight: bold;
+    vertical-align: top;
+    text-align: initial;
+}
+
+table#tabelaesp caption {
+    color: gray;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+table#tabelaesp caption span {
+    color: black;
+    font-weight: bold;
+    display: block;
+    float: right;
+    font-size: 8pt;
+    margin-top: 20px;
+}
